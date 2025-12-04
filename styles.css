@@ -1,21 +1,24 @@
+/* Modal background overlay */
 .modal {
-  display: none;
+  display: none;            /* IMPORTANT: modal must start hidden */
   position: fixed;
   inset: 0;
-  background: rgba(0,0,0,0.6);
-  display: flex;
+  background: rgba(0, 0, 0, 0.6);
+
   justify-content: center;
   align-items: center;
 }
 
+/* Modal box */
 .modal-content {
   width: 60%;
   background: white;
   border-radius: 6px;
-  box-shadow: 0 0 10px #000;
+  box-shadow: 0 0 10px black;
   overflow: hidden;
 }
 
+/* Header section */
 .modal-header {
   background: #4CAF50;
   padding: 15px;
@@ -27,14 +30,17 @@
 .modal-header h2 {
   color: white;
   margin: 0;
+  font-size: 20px;
 }
 
 .close-modal {
   color: white;
-  font-size: 20px;
+  font-size: 22px;
   cursor: pointer;
 }
 
+/* Body section */
 .modal-body {
   padding: 20px;
+  font-size: 16px;
 }
