@@ -1,24 +1,27 @@
-/* Modal background overlay */
+/* Modal Background Overlay */
 .modal {
-  display: none;            /* IMPORTANT: modal must start hidden */
+  display: none;          /* Cypress expects this initially */
   position: fixed;
-  inset: 0;
+  inset: 0;               /* top:0, right:0, bottom:0, left:0 */
   background: rgba(0, 0, 0, 0.6);
-
-  justify-content: center;
-  align-items: center;
 }
 
-/* Modal box */
+/* Modal Box */
 .modal-content {
   width: 60%;
   background: white;
   border-radius: 6px;
   box-shadow: 0 0 10px black;
   overflow: hidden;
+
+  /* Centering modal WITHOUT flex */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-/* Header section */
+/* Header */
 .modal-header {
   background: #4CAF50;
   padding: 15px;
@@ -30,16 +33,15 @@
 .modal-header h2 {
   color: white;
   margin: 0;
-  font-size: 20px;
 }
 
 .close-modal {
   color: white;
-  font-size: 22px;
+  font-size: 20px;
   cursor: pointer;
 }
 
-/* Body section */
+/* Body */
 .modal-body {
   padding: 20px;
   font-size: 16px;
