@@ -1,1 +1,40 @@
-/*  your css code here. If applicable */
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  width: 60%;
+  background: white;
+  border-radius: 6px;
+  box-shadow: 0 0 10px #000;
+  overflow: hidden;
+}
+
+.modal-header {
+  background: #4CAF50;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-header h2 {
+  color: white;
+  margin: 0;
+}
+
+.close-modal {
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.modal-body {
+  padding: 20px;
+}
